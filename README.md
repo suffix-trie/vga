@@ -26,7 +26,7 @@ text_mode.write_character(0, 0, screen_character);
 ## Graphics Mode
 ```rust
 use vga::colors::Color16;
-use vga::writers::{Graphics640x480x16, GraphicsWriter};
+use vga::writers::{Graphics640x480x16, GraphicsWriter, PrimitiveDrawing};
 
 let mode = Graphics640x480x16::new();
 mode.set_mode();
